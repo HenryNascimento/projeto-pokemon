@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 231, 231);
+}
+
+:root {
+    --fonte-normal: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Bangers', cursive;
+    --fonte-conteudo: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #012e38, #3CA6A6 );
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-normal);
+    font-size: 3.2em;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.073);
+    padding-bottom: 10px;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-normal);
+    font-size: 1.1em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.126);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.051);
+}
+
+main a {
+    text-decoration: none;
+    background-color: #012E40;
+    color: white;
+    padding: 2px ;
+    border-radius: 3px;
+}
+
+main a:hover {
+    color: #0df4f4;
+    transition: 0.5s;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main strong {
+    color: #1cacac;
+}
+
+main strong:hover {
+    color: #0df4f4;
+    transition: 0.5s;
+}
+
+section {
+   padding-top: 3vh;
+   padding-bottom: 3vh;
+   
+}
+
+section img {
+    width: 100%;
+}
+
+section > h2 {
+    font-family: 'Bangers', cursive;;
+    font-weight: normal;
+    font-size: 2.6em;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+section > p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    margin: 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: black;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.147);
+}
+
+section#imagem01 {
+    height: 500px;
+    background-image: url('../imagens/celular1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#imagem02 {
+    height: 500px;
+    background-image: url('../imagens/pikachu2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#imagem03 {
+    height: 500px;
+    background-image: url('../imagens/pokebola4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+aside {
+    background-color: #024959;
+    padding: 20px;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.178);
+}
+
+aside > h3 {
+    background-color: #012E40;
+    color: white;
+    font-family: var(--fonte-normal);
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: -20px -20px 0px -20px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding-top: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #012e38, #3CA6A6 );
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+footer > p {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
